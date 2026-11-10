@@ -1,0 +1,630 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Atelier Serenissima | Maschere in cartapesta e costumi storici a Venezia</title>
+<meta name="description" content="Atelier Serenissima: maschere veneziane in cartapesta e costumi storici del Settecento, fatti a mano a Venezia, Ponte di Rialto 10. Creazioni su misura e negozio online.">
+<meta property="og:title" content="Atelier Serenissima | Artigianato veneziano">
+<meta property="og:description" content="Maschere in cartapesta e costumi storici, fatti a mano a Venezia.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://atelierserenissima.com">
+<meta property="og:image" content="https://atelierserenissima.com/img/logo.png">
+<link rel="icon" type="image/png" href="img/logo-small.png">
+<link rel="canonical" href="https://atelierserenissima.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Atelier Serenissima",
+  "url": "https://atelierserenissima.com",
+  "email": "info@atelierserenissima.com",
+  "telephone": "+39 334 915 2896",
+  "description": "Maschere veneziane in cartapesta e costumi storici fatti a mano.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Ponte di Rialto, 10",
+    "addressLocality": "Venezia",
+    "addressRegion": "VE",
+    "postalCode": "30125",
+    "addressCountry": "IT"
+  },
+  "sameAs": ["https://www.instagram.com/atelierserenissima/"]
+}
+</script>
+
+<style>
+:root{
+  --ink:#16110f;
+  --ink-2:#241b17;
+  --cream:#f6efe3;
+  --cream-2:#ece1cf;
+  --gold:#b8924a;
+  --gold-2:#d6b46c;
+  --red:#7a1f2b;
+  --line:rgba(22,17,15,.14);
+  --radius:14px;
+  --serif:"Cormorant Garamond",Georgia,serif;
+  --sans:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--cream);color:var(--ink);font:400 16px/1.65 var(--sans);-webkit-font-smoothing:antialiased}
+img,svg{max-width:100%;display:block}
+a{color:inherit}
+.wrap{width:min(1120px,100% - 40px);margin-inline:auto}
+h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.1;margin:0 0 .5em}
+h1{font-size:clamp(2.6rem,6vw,4.6rem)}
+h2{font-size:clamp(2rem,4vw,3rem)}
+h3{font-size:1.5rem}
+.eyebrow{font:600 .75rem/1 var(--sans);letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;padding:.85rem 1.5rem;border-radius:999px;border:1px solid var(--gold);background:var(--gold);color:var(--ink);font:600 .9rem var(--sans);text-decoration:none;cursor:pointer;transition:.2s}
+.btn:hover{background:var(--gold-2);border-color:var(--gold-2)}
+.btn.ghost{background:transparent;color:var(--cream);border-color:rgba(246,239,227,.5)}
+.btn.ghost:hover{background:rgba(246,239,227,.1)}
+.btn.dark{background:var(--ink);color:var(--cream);border-color:var(--ink)}
+.btn.dark:hover{background:var(--red);border-color:var(--red)}
+.btn.small{padding:.55rem 1.1rem;font-size:.82rem}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+
+/* header */
+header.site{position:sticky;top:0;z-index:50;background:rgba(22,17,15,.94);backdrop-filter:blur(8px);color:var(--cream)}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:1rem;height:68px}
+.brand{font:600 1.45rem var(--serif);letter-spacing:.04em;text-decoration:none;white-space:nowrap}
+.brand{display:flex;align-items:center;height:100%}
+.brand img{height:56px;width:auto}
+nav.main{display:flex;gap:1.6rem}
+nav.main a{text-decoration:none;font-size:.9rem;opacity:.85}
+nav.main a:hover{opacity:1;color:var(--gold-2)}
+.tools{display:flex;align-items:center;gap:.6rem}
+.lang{display:flex;border:1px solid rgba(246,239,227,.3);border-radius:999px;overflow:hidden}
+.lang button{background:none;border:0;color:var(--cream);padding:.35rem .7rem;font:600 .75rem var(--sans);cursor:pointer;opacity:.6}
+.lang button[aria-pressed="true"]{background:var(--gold);color:var(--ink);opacity:1}
+.cart-btn{position:relative;background:none;border:1px solid rgba(246,239,227,.3);color:var(--cream);border-radius:999px;padding:.4rem .9rem;font:600 .82rem var(--sans);cursor:pointer}
+.cart-btn .n{display:inline-grid;place-items:center;min-width:1.35rem;height:1.35rem;margin-left:.35rem;border-radius:999px;background:var(--gold);color:var(--ink);font-size:.72rem}
+@media(max-width:820px){nav.main{display:none}}
+
+/* hero */
+.hero{position:relative;background:
+  radial-gradient(900px 420px at 80% 10%,rgba(184,146,74,.28),transparent 60%),
+  radial-gradient(700px 400px at 0% 100%,rgba(122,31,43,.55),transparent 60%),
+  var(--ink);
+  color:var(--cream);padding:clamp(4rem,10vw,8rem) 0;overflow:hidden}
+.hero .grid{display:grid;grid-template-columns:1.2fr .8fr;gap:3rem;align-items:center}
+.hero p.lead{font-size:1.12rem;max-width:34rem;opacity:.88}
+.hero .cta{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:2rem}
+.hero .art{justify-self:center;width:min(380px,80%);height:auto;filter:drop-shadow(0 20px 40px rgba(0,0,0,.5))}
+@media(max-width:820px){.hero .grid{grid-template-columns:1fr}.hero .art{order:-1;width:220px}}
+
+/* sections */
+section{padding:clamp(3.5rem,8vw,6rem) 0}
+.section-head{max-width:40rem;margin-bottom:2.5rem}
+.section-head p{opacity:.78;margin:0}
+
+/* shop */
+.filters{display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:2rem}
+.chip{padding:.5rem 1.1rem;border-radius:999px;border:1px solid var(--line);background:transparent;font:500 .85rem var(--sans);cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--ink);color:var(--cream);border-color:var(--ink)}
+.products{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:1.5rem}
+.card{background:#fff9ee;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;display:flex;flex-direction:column}
+.card .ph{aspect-ratio:4/5;background:linear-gradient(160deg,var(--cream-2),#e0d1b6);display:grid;place-items:center}
+.card .ph svg{width:62%}
+.card .ph img{width:100%;height:100%;object-fit:cover}
+.card .body{padding:1.1rem 1.2rem 1.3rem;display:flex;flex-direction:column;gap:.35rem;flex:1}
+.card h3{font-size:1.35rem;margin:0}
+.card p{margin:0;font-size:.9rem;opacity:.75;flex:1}
+.card .row{display:flex;align-items:center;justify-content:space-between;margin-top:.8rem;gap:.6rem}
+.price{font:600 1.25rem var(--serif)}
+.tag{font:600 .68rem var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--red)}
+
+/* custom */
+.dark-band{background:var(--ink-2);color:var(--cream)}
+.cols{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
+.cols .item{border:1px solid rgba(246,239,227,.16);border-radius:var(--radius);padding:1.6rem}
+.cols .item b{display:block;font:600 1.4rem var(--serif);color:var(--gold-2);margin-bottom:.4rem}
+.cols .item p{margin:0;opacity:.8;font-size:.95rem}
+@media(max-width:820px){.cols{grid-template-columns:1fr}}
+
+/* story */
+.story{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center}
+.story .frame{aspect-ratio:4/5;border-radius:var(--radius);background:linear-gradient(160deg,var(--red),var(--ink));display:grid;place-items:center;border:1px solid var(--gold)}
+.story .frame svg{width:55%}
+.story ul{padding-left:1.1rem;margin:1rem 0 0}
+.story li{margin:.3rem 0}
+@media(max-width:820px){.story{grid-template-columns:1fr}}
+
+/* contact */
+.contact{display:grid;grid-template-columns:1fr 1.1fr;gap:3rem}
+.contact address{font-style:normal}
+.contact dl{margin:1.5rem 0 0}
+.contact dt{font:600 .72rem var(--sans);letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin-top:1.1rem}
+.contact dd{margin:.2rem 0 0}
+form.msg{display:grid;gap:.9rem}
+form.msg label{display:grid;gap:.3rem;font-size:.85rem;font-weight:500}
+form.msg input,form.msg textarea{font:inherit;padding:.8rem 1rem;border-radius:10px;border:1px solid var(--line);background:#fff9ee}
+form.msg textarea{min-height:130px;resize:vertical}
+.note{font-size:.8rem;opacity:.65}
+@media(max-width:820px){.contact{grid-template-columns:1fr}}
+
+footer.site{background:var(--ink);color:rgba(246,239,227,.7);padding:2.5rem 0;font-size:.85rem}
+footer.site .row{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+footer.site a{color:var(--gold-2)}
+
+/* foto, video, galleria */
+.story .frame{overflow:hidden}
+.story .frame img{width:100%;height:100%;object-fit:cover}
+.video{display:block;width:100%;max-width:1000px;max-height:72vh;margin:0 auto 2.5rem;border-radius:var(--radius);background:#000}
+.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:1rem}
+.gallery figure{margin:0}
+.gallery img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:12px;border:1px solid rgba(246,239,227,.16)}
+.gallery figcaption{font-size:.85rem;opacity:.75;margin-top:.5rem}
+
+/* workshop + whatsapp */
+.meta{list-style:none;margin:.5rem 0 0;padding:0;font-size:.82rem;display:grid;gap:.2rem}
+.meta b{font-weight:600}
+.tbd{opacity:.6;font-style:italic;font-size:1rem}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;counter-reset:s;margin-bottom:2rem}
+.steps .item{border:1px solid var(--line);border-radius:var(--radius);padding:1.6rem;background:#fff9ee}
+.steps .item::before{counter-increment:s;content:counter(s);display:grid;place-items:center;width:2.2rem;height:2.2rem;border-radius:50%;background:var(--gold);color:var(--ink);font:600 1rem var(--serif);margin-bottom:.8rem}
+.steps .item b{display:block;font:600 1.3rem var(--serif);margin-bottom:.3rem}
+.steps .item p{margin:0;font-size:.92rem;opacity:.78}
+.btn-row{display:flex;flex-wrap:wrap;gap:.8rem}
+@media(max-width:820px){.steps{grid-template-columns:1fr}}
+.wa-float{position:fixed;right:18px;bottom:18px;z-index:60;display:flex;align-items:center;gap:.5rem;padding:.75rem 1.1rem;border-radius:999px;background:#25d366;color:#0b2e17;font:600 .88rem var(--sans);text-decoration:none;box-shadow:0 8px 24px rgba(0,0,0,.3)}
+.wa-float svg{width:22px;height:22px}
+
+/* cart drawer */
+.overlay{position:fixed;inset:0;background:rgba(0,0,0,.5);opacity:0;pointer-events:none;transition:.25s;z-index:90}
+.overlay.open{opacity:1;pointer-events:auto}
+aside.drawer{position:fixed;top:0;right:0;height:100%;width:min(420px,100%);background:var(--cream);z-index:100;transform:translateX(100%);transition:.3s;display:flex;flex-direction:column;box-shadow:-10px 0 40px rgba(0,0,0,.25)}
+aside.drawer.open{transform:none}
+.drawer header{display:flex;justify-content:space-between;align-items:center;padding:1.2rem 1.4rem;border-bottom:1px solid var(--line)}
+.drawer header h3{margin:0}
+.x{background:none;border:0;font-size:1.6rem;line-height:1;cursor:pointer}
+.items{flex:1;overflow:auto;padding:1rem 1.4rem}
+.line{display:grid;grid-template-columns:1fr auto;gap:.3rem 1rem;padding:.9rem 0;border-bottom:1px solid var(--line)}
+.line b{font-weight:600}
+.qty{display:flex;align-items:center;gap:.5rem}
+.qty button{width:28px;height:28px;border-radius:50%;border:1px solid var(--line);background:#fff9ee;cursor:pointer}
+.rm{background:none;border:0;color:var(--red);font-size:.78rem;cursor:pointer;padding:0;text-decoration:underline}
+.foot{padding:1.2rem 1.4rem;border-top:1px solid var(--line);display:grid;gap:.8rem}
+.total{display:flex;justify-content:space-between;font:600 1.3rem var(--serif)}
+.empty{opacity:.65;text-align:center;margin-top:3rem}
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap bar">
+    <a class="brand" href="#top" aria-label="Atelier Serenissima"><img src="img/logo-small.png" alt="Atelier Serenissima" width="360" height="318"></a>
+    <nav class="main" aria-label="Principale">
+      <a href="#negozio" data-i18n="nav_shop">Negozio</a>
+      <a href="#workshop" data-i18n="nav_workshop">Workshop</a>
+      <a href="#su-misura" data-i18n="nav_custom">Su misura</a>
+      <a href="#atelier" data-i18n="nav_about">L'atelier</a>
+      <a href="#lavoro" data-i18n="nav_work">Opere</a>
+      <a href="#contatti" data-i18n="nav_contact">Contatti</a>
+    </nav>
+    <div class="tools">
+      <div class="lang" role="group" aria-label="Lingua">
+        <button type="button" data-lang="it" aria-pressed="true">IT</button>
+        <button type="button" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+      <button class="cart-btn" id="openCart" type="button"><span data-i18n="cart">Carrello</span><span class="n" id="cartCount">0</span></button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+<section class="hero">
+  <div class="wrap grid">
+    <div>
+      <div class="eyebrow" data-i18n="hero_eyebrow">Venezia · Ponte di Rialto</div>
+      <h1 data-i18n="hero_title">Maschere e costumi, fatti a mano nel cuore di Venezia.</h1>
+      <p class="lead" data-i18n="hero_lead">Cartapesta lavorata con le tecniche della tradizione, rifinita con foglia d'oro e d'argento, pizzi e piume. Costumi ispirati al Settecento in sete e velluti pregiati.</p>
+      <div class="cta">
+        <a class="btn" href="#negozio" data-i18n="hero_cta1">Vai al negozio</a>
+        <a class="btn ghost" href="#su-misura" data-i18n="hero_cta2">Crea un pezzo su misura</a>
+      </div>
+    </div>
+    <img class="art" src="img/logo.png" alt="Atelier Serenissima" width="675" height="597">
+  </div>
+</section>
+
+<section id="negozio">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow" data-i18n="shop_eyebrow">Negozio online</div>
+      <h2 data-i18n="shop_title">Le nostre creazioni</h2>
+      <p data-i18n="shop_lead">Ogni pezzo è realizzato a mano e unico. Aggiungi al carrello e ti confermiamo disponibilità e spedizione.</p>
+    </div>
+    <div class="filters" role="group" aria-label="Filtri">
+      <button class="chip" type="button" data-filter="all" aria-pressed="true" data-i18n="f_all">Tutto</button>
+      <button class="chip" type="button" data-filter="masks" aria-pressed="false" data-i18n="f_masks">Maschere</button>
+      <button class="chip" type="button" data-filter="costumes" aria-pressed="false" data-i18n="f_costumes">Costumi</button>
+      <button class="chip" type="button" data-filter="workshops" aria-pressed="false" data-i18n="f_workshops">Workshop</button>
+    </div>
+    <div class="products" id="products"></div>
+  </div>
+</section>
+
+<section id="workshop" style="background:var(--cream-2)">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow" data-i18n="w_eyebrow">Workshop per tutte le età</div>
+      <h2 data-i18n="w_title">Dipingi la tua maschera a Venezia</h2>
+      <p data-i18n="w_lead">Corsi nel nostro atelier, per bambini, adulti, famiglie e gruppi. Prezzi e orari variano a seconda del workshop: trovi i dettagli nelle schede del negozio.</p>
+    </div>
+    <div class="steps">
+      <div class="item"><b data-i18n="w_s1t">Scegli il workshop</b><p data-i18n="w_s1p">Guarda le schede nella sezione Negozio → Workshop: età, durata, orari e prezzo.</p></div>
+      <div class="item"><b data-i18n="w_s2t">Scrivici</b><p data-i18n="w_s2p">Prenota su WhatsApp o per email indicando data, numero di persone ed età.</p></div>
+      <div class="item"><b data-i18n="w_s3t">Vieni in atelier</b><p data-i18n="w_s3p">Ti confermiamo il posto e ti aspettiamo a Ponte di Rialto 10.</p></div>
+    </div>
+    <div class="btn-row">
+      <a class="btn dark" href="#negozio" data-filter="workshops" data-i18n="w_shop">Vedi i workshop</a>
+      <a class="btn" id="waBook" href="#" target="_blank" rel="noopener" data-i18n="w_cta">Prenota su WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<section id="su-misura" class="dark-band">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow" data-i18n="c_eyebrow">Su misura</div>
+      <h2 data-i18n="c_title">Un pezzo pensato per te</h2>
+      <p data-i18n="c_lead">Per eventi, collezioni o decorazioni: raccontaci l'idea e la realizziamo insieme.</p>
+    </div>
+    <div class="cols">
+      <div class="item"><b data-i18n="c1_t">Maschere personalizzate</b><p data-i18n="c1_p">Forma, decorazioni, colori e materiali scelti con te: foglia d'oro, pizzo, piume.</p></div>
+      <div class="item"><b data-i18n="c2_t">Costumi d'epoca</b><p data-i18n="c2_p">Abiti ispirati al Settecento in sete e velluti, per il Carnevale e per ogni occasione speciale.</p></div>
+      <div class="item"><b data-i18n="c3_t">Pezzi unici</b><p data-i18n="c3_p">Cornici, maschere da parete e altre opere in cartapesta, anche in più esemplari.</p></div>
+    </div>
+    <p style="margin-top:2rem"><a class="btn" href="#contatti" data-i18n="c_cta">Richiedi un preventivo</a></p>
+  </div>
+</section>
+
+<section id="atelier">
+  <div class="wrap story">
+    <div class="frame">
+      <img src="img/bozzetto-cervo.jpg" alt="Bozzetto in argilla di una testa di cervo, nel nostro laboratorio" loading="lazy">
+    </div>
+    <div>
+      <div class="eyebrow" data-i18n="a_eyebrow">L'atelier</div>
+      <h2 data-i18n="a_title">Una tradizione che continua</h2>
+      <p data-i18n="a_p1">Atelier Serenissima porta avanti l'antica arte veneziana con passione e dedizione. Le nostre radici sono nella tradizione della Serenissima, dove Carnevale, eleganza e mistero si intrecciano.</p>
+      <p data-i18n="a_p2">Ogni maschera in cartapesta è fatta a mano con tecniche tramandate nei secoli; i costumi riflettono l'opulenza del Settecento.</p>
+      <ul>
+        <li data-i18n="a_l1">Cartapesta modellata e decorata a mano</li>
+        <li data-i18n="a_l2">Foglia d'oro e d'argento, pizzi, piume</li>
+        <li data-i18n="a_l3">Sete e velluti pregiati per i costumi</li>
+        <li data-i18n="a_l4">Garanzia di soddisfazione su ogni pezzo</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="lavoro" class="dark-band">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow" data-i18n="lav_eyebrow">Il nostro lavoro</div>
+      <h2 data-i18n="lav_title">Dall'argilla alla maschera finita</h2>
+      <p data-i18n="lav_lead">Ogni pezzo nasce nel nostro laboratorio: modellato, stampato, rifinito e decorato a mano.</p>
+    </div>
+    <video class="video" controls preload="metadata" playsinline poster="img/poster.jpg">
+      <source src="video/atelier-serenissima.mp4" type="video/mp4">
+    </video>
+    <div class="gallery" id="gallery"></div>
+  </div>
+</section>
+
+<section id="contatti" style="background:var(--cream-2)">
+  <div class="wrap contact">
+    <div>
+      <div class="eyebrow" data-i18n="k_eyebrow">Contatti</div>
+      <h2 data-i18n="k_title">Passa a trovarci</h2>
+      <address>
+        <dl>
+          <dt data-i18n="k_addr">Indirizzo</dt>
+          <dd>Ponte di Rialto, 10<br>Sestiere San Polo, 30125 Venezia (VE)<br><a href="https://www.google.com/maps/search/?api=1&query=Atelier+Serenissima+Masks+Handmade+in+Paper+Mache+%26+Workshop+Classes+Ponte+di+Rialto+10+Venezia" target="_blank" rel="noopener" data-i18n="k_map">Apri su Google Maps</a></dd>
+          <dt>Email</dt>
+          <dd><a href="mailto:info@atelierserenissima.com">info@atelierserenissima.com</a></dd>
+          <dt data-i18n="k_phone">Telefono</dt>
+          <dd><a href="tel:+393349152896">+39 334 915 2896</a></dd>
+          <dt>WhatsApp</dt>
+          <dd><a id="waLink" href="#" target="_blank" rel="noopener">+39 334 915 2896</a></dd>
+          <dt>Instagram</dt>
+          <dd><a href="https://www.instagram.com/atelierserenissima/" target="_blank" rel="noopener">@atelierserenissima</a></dd>
+        </dl>
+      </address>
+    </div>
+    <form class="msg" name="contatti" method="POST" action="/grazie.html" data-netlify="true" netlify-honeypot="bot-field">
+      <input type="hidden" name="form-name" value="contatti">
+      <p hidden><label>Non compilare: <input name="bot-field"></label></p>
+      <label><span data-i18n="k_name">Nome</span><input name="nome" required autocomplete="name"></label>
+      <label>Email<input type="email" name="email" required autocomplete="email"></label>
+      <label><span data-i18n="k_msg">Messaggio</span><textarea name="messaggio" required></textarea></label>
+      <button class="btn dark" type="submit" data-i18n="k_send">Invia messaggio</button>
+      <span class="note" data-i18n="k_note">Ti rispondiamo il prima possibile.</span>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<footer class="site">
+  <div class="wrap row">
+    <div>© <span id="yr"></span> Atelier Serenissima · Ponte di Rialto, 10 · 30125 Venezia · <!-- TODO: P.IVA / ragione sociale --><span data-i18n="vat">P.IVA: da inserire</span></div>
+    <div><a href="#" data-i18n="privacy">Privacy</a> · <a href="#" data-i18n="terms">Termini di vendita</a></div>
+  </div>
+</footer>
+
+<a class="wa-float" id="waFloat" href="#" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 2a8 8 0 1 1-4.2 14.8l-.3-.2-2.4.6.6-2.3-.2-.3A8 8 0 0 1 12 4zm-3 3.6c-.2 0-.5.1-.7.4-.3.3-.9.9-.9 2.1s.9 2.4 1 2.6c.1.2 1.8 2.8 4.4 3.8 2.2.9 2.6.7 3.1.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.6-.3l-1.800-.9c-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1-.8-.4-1.700-.9-2.500-2.200-.1-.2 0-.3.1-.4l.5-.6c.1-.2.2-.3.2-.5s0-.3-.1-.5l-.8-1.900c-.2-.5-.4-.4-.6-.4z"/></svg>
+  <span data-i18n="wa_label">WhatsApp</span>
+</a>
+
+<div class="overlay" id="overlay"></div>
+<aside class="drawer" id="drawer" aria-label="Carrello" aria-hidden="true">
+  <header><h3 data-i18n="cart">Carrello</h3><button class="x" id="closeCart" type="button" aria-label="Chiudi">×</button></header>
+  <div class="items" id="items"></div>
+  <div class="foot">
+    <div class="total"><span data-i18n="total">Totale</span><span id="total">€0</span></div>
+    <button class="btn dark" id="checkout" type="button" data-i18n="checkout">Invia richiesta d'ordine</button>
+    <span class="note" data-i18n="checkout_note">Si apre la tua email con il riepilogo dell'ordine: confermiamo disponibilità, spedizione e pagamento.</span>
+  </div>
+</aside>
+
+<script>
+/* ============================================================
+   CATALOGO — modifica qui i prodotti.
+   - I prodotti sotto sono ESEMPI: sostituisci nomi, descrizioni, prezzi.
+   - img: percorso della foto (es. "img/colombina.jpg"); se vuoto compare un segnaposto.
+   - payLink: link di pagamento (Stripe Payment Link o PayPal) per l'acquisto immediato
+     di quel singolo pezzo. Se vuoto, il pezzo va nel carrello e l'ordine parte via email.
+   ============================================================ */
+const TBD = {it:"[da inserire]", en:"[to be added]"};
+const PRODUCTS = [
+  { id:"m1", cat:"masks", price:120, img:"img/leone-dorato.jpg", payLink:"",
+    name:{it:"Leone in foglia d'oro", en:"Gold-leaf lion"},
+    desc:{it:"Testa di leone da parete in cartapesta, dorata a mano. (esempio: prezzo da verificare)", en:"Wall-hung papier-mâché lion head, gilded by hand. (example: check price)"} },
+  { id:"m2", cat:"masks", price:180, img:"img/leone-policromo.jpg", payLink:"",
+    name:{it:"Leone decorato a mano", en:"Hand-decorated lion"},
+    desc:{it:"Leone policromo con decorazioni in rilievo, con cornice. (esempio: prezzo da verificare)", en:"Polychrome lion with relief decoration, framed. (example: check price)"} },
+  { id:"m3", cat:"masks", price:95,  img:"img/maschera-floreale.jpg", payLink:"",
+    name:{it:"Maschera floreale", en:"Floral mask"},
+    desc:{it:"Volto con decorazioni di fiori, frutti e uva. (esempio: prezzo da verificare)", en:"Face with flowers, fruit and grapes. (example: check price)"} },
+  { id:"c1", cat:"costumes", price:350, img:"", payLink:"",
+    name:{it:"Costume settecentesco", en:"18th-century costume"},
+    desc:{it:"Abito d'epoca in sete e velluti, su misura. (esempio)", en:"Period gown in silk and velvet, made to measure. (example)"} },
+  { id:"c2", cat:"costumes", price:190, img:"", payLink:"",
+    name:{it:"Mantello e tricorno", en:"Cloak and tricorn"},
+    desc:{it:"Set per il Carnevale, in velluto. (esempio)", en:"Carnival set in velvet. (example)"} },
+
+  /* WORKSHOP — si prenotano via WhatsApp/email, non passano dal carrello.
+     price: null = "prezzo da definire". Sostituisci i segnaposto TBD con i dati veri. */
+  { id:"w1", cat:"workshops", price:null, img:"img/workshop-maschera-bianca.jpg",
+    name:{it:"Workshop Painting Masks · Bambini", en:"Painting Masks Workshop · Kids"},
+    desc:{it:"Si dipinge e si decora una maschera in cartapesta, da portare a casa. (esempio)", en:"Paint and decorate a papier-mâché mask to take home. (example)"},
+    ages:TBD, duration:TBD, when:TBD, included:TBD },
+  { id:"w2", cat:"workshops", price:null, img:"img/workshop-maschera-bianca.jpg",
+    name:{it:"Workshop Painting Masks · Adulti", en:"Painting Masks Workshop · Adults"},
+    desc:{it:"Decorazione guidata con foglia d'oro, colori e dettagli. (esempio)", en:"Guided decoration with gold leaf, colours and details. (example)"},
+    ages:TBD, duration:TBD, when:TBD, included:TBD },
+  { id:"w3", cat:"workshops", price:null, img:"img/workshop-maschera-bianca.jpg",
+    name:{it:"Workshop Painting Masks · Famiglie e gruppi", en:"Painting Masks Workshop · Families & groups"},
+    desc:{it:"Per famiglie, amici, scuole e gruppi, anche con orari su richiesta. (esempio)", en:"For families, friends, schools and groups, with times on request. (example)"},
+    ages:TBD, duration:TBD, when:TBD, included:TBD }
+];
+
+/* GALLERIA — foto con didascalia. Aggiungi o cambia righe: img = percorso della foto. */
+const GALLERY = [
+  { img:"img/stampi-gesso.jpg", cap:{it:"Gli stampi in gesso", en:"The plaster moulds"} },
+  { img:"img/carta-negli-stampi.jpg", cap:{it:"La carta nello stampo", en:"Paper in the mould"} },
+  { img:"img/maschera-disegno-venezia.jpg", cap:{it:"Il disegno sulla maschera, prima della pittura", en:"The drawing on the mask, before painting"} },
+  { img:"img/maschere-bianche-bn.jpg", cap:{it:"Maschere e rilievi bianchi", en:"White masks and reliefs"} }
+];
+
+const CURRENCY = "€";
+const EMAIL = "info@atelierserenissima.com";
+const WA_NUMBER = "393349152896"; // stesso numero del telefono, senza + e spazi
+const wa = txt => "https://wa.me/" + WA_NUMBER + "?text=" + encodeURIComponent(txt);
+
+const T = {
+  it:{nav_shop:"Negozio",nav_custom:"Su misura",nav_about:"L'atelier",nav_contact:"Contatti",cart:"Carrello",
+    hero_eyebrow:"Venezia · Ponte di Rialto",hero_title:"Maschere e costumi, fatti a mano nel cuore di Venezia.",
+    hero_lead:"Cartapesta lavorata con le tecniche della tradizione, rifinita con foglia d'oro e d'argento, pizzi e piume. Costumi ispirati al Settecento in sete e velluti pregiati.",
+    hero_cta1:"Vai al negozio",hero_cta2:"Crea un pezzo su misura",
+    shop_eyebrow:"Negozio online",shop_title:"Le nostre creazioni",shop_lead:"Ogni pezzo è realizzato a mano e unico. Aggiungi al carrello e ti confermiamo disponibilità e spedizione.",
+    f_all:"Tutto",f_masks:"Maschere",f_costumes:"Costumi",
+    c_eyebrow:"Su misura",c_title:"Un pezzo pensato per te",c_lead:"Per eventi, collezioni o decorazioni: raccontaci l'idea e la realizziamo insieme.",
+    c1_t:"Maschere personalizzate",c1_p:"Forma, decorazioni, colori e materiali scelti con te: foglia d'oro, pizzo, piume.",
+    c2_t:"Costumi d'epoca",c2_p:"Abiti ispirati al Settecento in sete e velluti, per il Carnevale e per ogni occasione speciale.",
+    c3_t:"Pezzi unici",c3_p:"Cornici, maschere da parete e altre opere in cartapesta, anche in più esemplari.",c_cta:"Richiedi un preventivo",
+    a_eyebrow:"L'atelier",a_title:"Una tradizione che continua",
+    a_p1:"Atelier Serenissima porta avanti l'antica arte veneziana con passione e dedizione. Le nostre radici sono nella tradizione della Serenissima, dove Carnevale, eleganza e mistero si intrecciano.",
+    a_p2:"Ogni maschera in cartapesta è fatta a mano con tecniche tramandate nei secoli; i costumi riflettono l'opulenza del Settecento.",
+    a_l1:"Cartapesta modellata e decorata a mano",a_l2:"Foglia d'oro e d'argento, pizzi, piume",a_l3:"Sete e velluti pregiati per i costumi",a_l4:"Garanzia di soddisfazione su ogni pezzo",
+    k_eyebrow:"Contatti",k_title:"Passa a trovarci",k_addr:"Indirizzo",k_map:"Apri su Google Maps",k_phone:"Telefono",
+    k_name:"Nome",k_msg:"Messaggio",k_send:"Invia messaggio",k_note:"Ti rispondiamo il prima possibile.",
+    vat:"P.IVA: da inserire",privacy:"Privacy",terms:"Termini di vendita",
+    total:"Totale",checkout:"Invia richiesta d'ordine",checkout_note:"Si apre la tua email con il riepilogo dell'ordine: confermiamo disponibilità, spedizione e pagamento.",
+    add:"Aggiungi",buy:"Acquista ora",empty:"Il carrello è vuoto.",remove:"Rimuovi",
+    nav_workshop:"Workshop",f_workshops:"Workshop",book:"Prenota",tbd:"Prezzo da definire",
+    w_eyebrow:"Workshop per tutte le età",w_title:"Dipingi la tua maschera a Venezia",
+    w_lead:"Corsi nel nostro atelier, per bambini, adulti, famiglie e gruppi. Prezzi e orari variano a seconda del workshop: trovi i dettagli nelle schede del negozio.",
+    w_s1t:"Scegli il workshop",w_s1p:"Guarda le schede nella sezione Negozio → Workshop: età, durata, orari e prezzo.",
+    w_s2t:"Scrivici",w_s2p:"Prenota su WhatsApp o per email indicando data, numero di persone ed età.",
+    w_s3t:"Vieni in atelier",w_s3p:"Ti confermiamo il posto e ti aspettiamo a Ponte di Rialto 10.",
+    w_cta:"Prenota su WhatsApp",w_shop:"Vedi i workshop",wa_label:"WhatsApp",
+    wa_hello:"Buongiorno, vorrei informazioni su Atelier Serenissima.",
+    wa_book:"Buongiorno, vorrei prenotare il workshop: ",wa_book2:". Data desiderata: … Numero di persone: … Età: …",
+    m_ages:"Età",m_dur:"Durata",m_when:"Quando",m_incl:"Incluso",
+    nav_work:"Opere",lav_eyebrow:"Il nostro lavoro",lav_title:"Dall'argilla alla maschera finita",
+    lav_lead:"Ogni pezzo nasce nel nostro laboratorio: modellato, stampato, rifinito e decorato a mano.",
+    mail_subj:"Richiesta d'ordine dal sito",mail_hello:"Buongiorno, vorrei ordinare:",mail_total:"Totale",mail_bye:"Nome e indirizzo di spedizione:"},
+  en:{nav_shop:"Shop",nav_custom:"Custom work",nav_about:"The atelier",nav_contact:"Contact",cart:"Cart",
+    hero_eyebrow:"Venice · Rialto Bridge",hero_title:"Masks and costumes, handmade in the heart of Venice.",
+    hero_lead:"Papier-mâché worked with traditional techniques and finished with gold and silver leaf, lace and feathers. Costumes inspired by the 18th century in fine silks and velvets.",
+    hero_cta1:"Visit the shop",hero_cta2:"Commission a piece",
+    shop_eyebrow:"Online shop",shop_title:"Our creations",shop_lead:"Every piece is handmade and unique. Add it to your cart and we will confirm availability and shipping.",
+    f_all:"All",f_masks:"Masks",f_costumes:"Costumes",
+    c_eyebrow:"Custom work",c_title:"A piece made for you",c_lead:"For events, collections or decoration: tell us your idea and we will make it together.",
+    c1_t:"Custom masks",c1_p:"Shape, decoration, colours and materials chosen with you: gold leaf, lace, feathers.",
+    c2_t:"Period costumes",c2_p:"Gowns inspired by the 18th century in silks and velvets, for Carnival and every special occasion.",
+    c3_t:"Unique pieces",c3_p:"Frames, wall masks and other papier-mâché works, also in multiple copies.",c_cta:"Request a quote",
+    a_eyebrow:"The atelier",a_title:"A tradition that lives on",
+    a_p1:"Atelier Serenissima carries on the ancient Venetian art with passion and dedication. Our roots lie in the tradition of the Serenissima, where Carnival, elegance and mystery intertwine.",
+    a_p2:"Every papier-mâché mask is handmade with techniques passed down through the centuries; the costumes reflect the opulence of the 18th century.",
+    a_l1:"Papier-mâché shaped and decorated by hand",a_l2:"Gold and silver leaf, lace, feathers",a_l3:"Fine silks and velvets for the costumes",a_l4:"Satisfaction guarantee on every piece",
+    k_eyebrow:"Contact",k_title:"Come and visit",k_addr:"Address",k_map:"Open in Google Maps",k_phone:"Phone",
+    k_name:"Name",k_msg:"Message",k_send:"Send message",k_note:"We will reply as soon as possible.",
+    vat:"VAT no.: to be added",privacy:"Privacy",terms:"Terms of sale",
+    total:"Total",checkout:"Send order request",checkout_note:"Your email app opens with the order summary: we confirm availability, shipping and payment.",
+    add:"Add",buy:"Buy now",empty:"Your cart is empty.",remove:"Remove",
+    nav_workshop:"Workshops",f_workshops:"Workshops",book:"Book",tbd:"Price to be confirmed",
+    w_eyebrow:"Workshops for all ages",w_title:"Paint your own mask in Venice",
+    w_lead:"Classes in our atelier for children, adults, families and groups. Prices and times vary by workshop: details are on the cards in the shop.",
+    w_s1t:"Choose a workshop",w_s1p:"See the cards in Shop → Workshops: age, duration, times and price.",
+    w_s2t:"Write to us",w_s2p:"Book on WhatsApp or by email with the date, number of people and ages.",
+    w_s3t:"Come to the atelier",w_s3p:"We confirm your place and wait for you at Ponte di Rialto 10.",
+    w_cta:"Book on WhatsApp",w_shop:"See the workshops",wa_label:"WhatsApp",
+    wa_hello:"Hello, I would like some information about Atelier Serenissima.",
+    wa_book:"Hello, I would like to book the workshop: ",wa_book2:". Preferred date: … Number of people: … Ages: …",
+    m_ages:"Ages",m_dur:"Duration",m_when:"When",m_incl:"Included",
+    nav_work:"Our work",lav_eyebrow:"Our work",lav_title:"From clay to finished mask",
+    lav_lead:"Every piece is born in our workshop: modelled, moulded, finished and decorated by hand.",
+    mail_subj:"Order request from the website",mail_hello:"Hello, I would like to order:",mail_total:"Total",mail_bye:"Name and shipping address:"}
+};
+
+let lang = "it";
+try {
+  const saved = localStorage.getItem("lang");
+  lang = (saved === "it" || saved === "en") ? saved : ((navigator.language||"it").slice(0,2) === "en" ? "en" : "it");
+} catch(e){}
+let cart = [];
+try { cart = JSON.parse(localStorage.getItem("cart")||"[]"); } catch(e){ cart = []; }
+let filter = "all";
+
+const $ = s => document.querySelector(s);
+const money = n => CURRENCY + n.toFixed(n % 1 ? 2 : 0);
+const t = k => (T[lang][k] ?? k);
+
+function maskSVG(){
+  return '<svg viewBox="0 0 200 240" aria-hidden="true"><path d="M100 18c48 0 84 30 84 78 0 50-30 90-84 124C46 186 16 146 16 96c0-48 36-78 84-78z" fill="#d6b46c" stroke="#7a1f2b" stroke-width="3"/><path d="M40 92c10-18 34-22 50-8 4 4 4 12-2 17-14 12-38 10-48-9zM160 92c-10-18-34-22-50-8-4 4-4 12 2 17 14 12 38 10 48-9z" fill="#16110f"/><path d="M62 150c22 20 54 20 76 0" fill="none" stroke="#7a1f2b" stroke-width="3" stroke-linecap="round"/></svg>';
+}
+function costumeSVG(){
+  return '<svg viewBox="0 0 200 240" aria-hidden="true"><path d="M78 20h44l10 36 40 28-22 30-18-10v110H68V104L50 114 28 84l40-28z" fill="#7a1f2b" stroke="#d6b46c" stroke-width="3" stroke-linejoin="round"/><path d="M100 56v160M82 104h36" stroke="#d6b46c" stroke-width="2.5" stroke-linecap="round"/></svg>';
+}
+
+function save(){ try{ localStorage.setItem("cart", JSON.stringify(cart)); }catch(e){} }
+
+function renderProducts(){
+  const el = $("#products");
+  el.innerHTML = "";
+  PRODUCTS.filter(p => filter==="all" || p.cat===filter).forEach(p=>{
+    const card = document.createElement("article");
+    card.className = "card";
+    const isWs = p.cat==="workshops";
+    const ph = p.img ? `<img src="${p.img}" alt="${p.name[lang]}" loading="lazy">` : (p.cat==="costumes" ? costumeSVG() : maskSVG());
+    let action;
+    if(isWs){
+      action = `<a class="btn small" href="${wa(t("wa_book")+p.name[lang]+t("wa_book2"))}" target="_blank" rel="noopener">${t("book")}</a>`;
+    } else if(p.payLink){
+      action = `<a class="btn small" href="${p.payLink}" target="_blank" rel="noopener">${t("buy")}</a>`;
+    } else {
+      action = `<button class="btn small" type="button" data-add="${p.id}">${t("add")}</button>`;
+    }
+    const tagName = ({masks:t("f_masks"),costumes:t("f_costumes"),workshops:t("f_workshops")})[p.cat];
+    const priceHtml = (p.price==null) ? `<span class="price tbd">${t("tbd")}</span>` : `<span class="price">${money(p.price)}</span>`;
+    const meta = isWs ? `<ul class="meta">
+          <li><b>${t("m_ages")}:</b> ${p.ages[lang]}</li>
+          <li><b>${t("m_dur")}:</b> ${p.duration[lang]}</li>
+          <li><b>${t("m_when")}:</b> ${p.when[lang]}</li>
+          <li><b>${t("m_incl")}:</b> ${p.included[lang]}</li></ul>` : "";
+    card.innerHTML = `<div class="ph">${ph}</div>
+      <div class="body">
+        <span class="tag">${tagName}</span>
+        <h3>${p.name[lang]}</h3>
+        <p>${p.desc[lang]}</p>
+        ${meta}
+        <div class="row">${priceHtml}${action}</div>
+      </div>`;
+    el.appendChild(card);
+  });
+}
+
+function renderCart(){
+  const box = $("#items");
+  const count = cart.reduce((a,l)=>a+l.qty,0);
+  $("#cartCount").textContent = count;
+  if(!cart.length){
+    box.innerHTML = `<p class="empty">${t("empty")}</p>`;
+    $("#total").textContent = money(0);
+    $("#checkout").disabled = true;
+    return;
+  }
+  $("#checkout").disabled = false;
+  let total = 0;
+  box.innerHTML = cart.map(l=>{
+    const p = PRODUCTS.find(x=>x.id===l.id); if(!p) return "";
+    total += p.price*l.qty;
+    return `<div class="line">
+      <div><b>${p.name[lang]}</b><br><span class="note">${money(p.price)}</span></div>
+      <div class="qty"><button type="button" data-dec="${p.id}" aria-label="−">−</button><span>${l.qty}</span><button type="button" data-inc="${p.id}" aria-label="+">+</button></div>
+      <div><button class="rm" type="button" data-rm="${p.id}">${t("remove")}</button></div>
+      <div style="text-align:right">${money(p.price*l.qty)}</div>
+    </div>`;
+  }).join("");
+  $("#total").textContent = money(total);
+}
+
+function renderGallery(){
+  const el = $("#gallery"); if(!el) return;
+  el.innerHTML = GALLERY.map(g => `<figure><a href="${g.img}" target="_blank" rel="noopener"><img src="${g.img}" alt="${g.cap[lang]}" loading="lazy"></a><figcaption>${g.cap[lang]}</figcaption></figure>`).join("");
+}
+
+function openCart(o){
+  $("#drawer").classList.toggle("open",o);
+  $("#overlay").classList.toggle("open",o);
+  $("#drawer").setAttribute("aria-hidden", String(!o));
+}
+
+function applyLang(){
+  document.documentElement.lang = lang;
+  document.querySelectorAll("[data-i18n]").forEach(n=>{ const v=T[lang][n.dataset.i18n]; if(v) n.textContent=v; });
+  document.querySelectorAll("[data-lang]").forEach(b=>b.setAttribute("aria-pressed", String(b.dataset.lang===lang)));
+  ["#waFloat","#waLink","#waBook"].forEach(s=>{ const a=$(s); if(a) a.href = wa(t("wa_hello")); });
+  renderProducts(); renderGallery(); renderCart();
+}
+
+document.addEventListener("click", e=>{
+  const b = e.target.closest("button, a"); if(!b) return;
+  if(b.dataset.add){ const l=cart.find(x=>x.id===b.dataset.add); l?l.qty++:cart.push({id:b.dataset.add,qty:1}); save(); renderCart(); openCart(true); }
+  else if(b.dataset.inc){ cart.find(x=>x.id===b.dataset.inc).qty++; save(); renderCart(); }
+  else if(b.dataset.dec){ const l=cart.find(x=>x.id===b.dataset.dec); l.qty--; if(l.qty<=0) cart=cart.filter(x=>x!==l); save(); renderCart(); }
+  else if(b.dataset.rm){ cart=cart.filter(x=>x.id!==b.dataset.rm); save(); renderCart(); }
+  else if(b.dataset.filter){ filter=b.dataset.filter; document.querySelectorAll(".chip[data-filter]").forEach(c=>c.setAttribute("aria-pressed", String(c.dataset.filter===filter))); renderProducts(); }
+  else if(b.dataset.lang){ lang=b.dataset.lang; try{localStorage.setItem("lang",lang);}catch(_){} applyLang(); }
+});
+$("#openCart").onclick = ()=>openCart(true);
+$("#closeCart").onclick = ()=>openCart(false);
+$("#overlay").onclick = ()=>openCart(false);
+document.addEventListener("keydown", e=>{ if(e.key==="Escape") openCart(false); });
+
+$("#checkout").onclick = ()=>{
+  let total = 0;
+  const lines = cart.map(l=>{ const p=PRODUCTS.find(x=>x.id===l.id); total+=p.price*l.qty; return `- ${p.name[lang]} x ${l.qty} = ${money(p.price*l.qty)}`; });
+  const body = `${t("mail_hello")}\n\n${lines.join("\n")}\n\n${t("mail_total")}: ${money(total)}\n\n${t("mail_bye")}\n`;
+  location.href = `mailto:${EMAIL}?subject=${encodeURIComponent(t("mail_subj"))}&body=${encodeURIComponent(body)}`;
+};
+
+$("#yr").textContent = new Date().getFullYear();
+applyLang();
+</script>
+</body>
+</html>
